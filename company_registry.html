@@ -68,24 +68,24 @@
 					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 					<div class="mui-slider-item mui-slider-item-duplicate">
 						<a href="#">
-							<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_public_two_1.png">
+							<img src="img/p_public_two_1.png">
 						</a>
 					</div>
 					<!-- 第n张 -->
 					<div class="mui-slider-item">
 						<a href="#">
-							<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_scroll_one.jpg">
+							<img src="img/p_gongsizhuce_scroll_one.jpg">
 						</a>
 					</div>
 					<div class="mui-slider-item">
 						<a href="#">
-							<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_public_two_1.png">
+							<img src="img/p_public_two_1.png">
 						</a>
 					</div>
 					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
 					<div class="mui-slider-item mui-slider-item-duplicate">
 						<a href="#">
-							<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_scroll_one.jpg">
+							<img src="img/p_gongsizhuce_scroll_one.jpg">
 						</a>
 					</div>
 				</div>
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<div class="l_zml_pd_mid">
-				<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_content_one.png">
+				<img src="img/p_gongsizhuce_content_one.png">
 			</div>
 
 			<div class="l_zml_pd_item">
@@ -144,15 +144,15 @@
 			</style>
 
 			<div class="l_comm_p_content">
-				<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_2.png">
+				<img src="img/p_gongsizhuce_2.png">
 			</div>
 
 			<div class="l_comm_p_content">
-				<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_3.jpg">
+				<img src="img/p_gongsizhuce_3.jpg">
 			</div>
 
 			<div class="l_comm_p_content">
-				<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_gongsizhuce_4.png">
+				<img src="img/p_gongsizhuce_4.png">
 			</div>
 
 			<div id="p-c-one-slider" class="mui-slider">
@@ -217,80 +217,81 @@
 
 	</body>
 	<script>
-	(function($) {
-		var html_p_c_one = '<img id="scroll_img_height" src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_c_content_w_one.png">';
-		var html_p_c_two = '<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_c_content_w_two.png">';
-		var html_p_c_three = '<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_c_content_w_three.png">';
-		var html_p_c_four = '<img src="http://www.kuaifawu.com/Public/Image/Weixin/product/p_c_content_w_four.png">';
-
-		var item_one = document.getElementById('p-c-one-1');
-		if (item_one.querySelector('.mui-loading')) {
-			setTimeout(function() {
-				item_one.querySelector('.mui-scroll').innerHTML = html_p_c_one;
-			}, 100);
-			setTimeout(function() {
-				var height = document.getElementById('scroll_img_height').height;
-				document.getElementById('p-c-one-1').style.minHeight = height + 'px';
-				document.getElementById('p-c-one-2').style.minHeight = height + 'px';
-				document.getElementById('p-c-one-3').style.minHeight = height + 'px';
-				document.getElementById('p-c-one-4').style.minHeight = height + 'px';
-			}, 600);
-		}
-
-		document.getElementById('p-c-one-slider').addEventListener('slide', function(e) {
-			document.getElementById('p-c-three-1').style.color = '#5A5757';
-			document.getElementById('p-c-three-2').style.color = '#5A5757';
-			document.getElementById('p-c-three-3').style.color = '#5A5757';
-			document.getElementById('p-c-three-4').style.color = '#5A5757';
-			switch (e.detail.slideNumber) {
-				case 0:
-				{
-					var item_one = document.getElementById('p-c-one-1');
-					if (item_one.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item_one.querySelector('.mui-scroll').innerHTML = html_p_c_one;
-						}, 500);
-					}
-					document.getElementById('p-c-three-1').style.color = '#00C9FA';
-					document.getElementById('p-c-three-1').style.backgroundColor = '#ffffff';
-				}break;
-				case 1:
-				{
-					var item_two = document.getElementById('p-c-one-2');
-					if (item_two.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item_two.querySelector('.mui-scroll').innerHTML = html_p_c_two;
-						}, 500);
-					}
-					document.getElementById('p-c-three-2').style.color = '#00C9FA';
-					document.getElementById('p-c-three-2').style.backgroundColor = '#ffffff';
-				}break;
-				case 2:
-				{
-					var item_three = document.getElementById('p-c-one-3');
-					if (item_three.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item_three.querySelector('.mui-scroll').innerHTML = html_p_c_three;
-						}, 500);
-					}
-					document.getElementById('p-c-three-3').style.color = '#00C9FA';
-					document.getElementById('p-c-three-3').style.backgroundColor = '#ffffff';
-				}break;
-				case 3:
-				{
-					var item_four = document.getElementById('p-c-one-4');
-					if (item_four.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item_four.querySelector('.mui-scroll').innerHTML = html_p_c_four;
-						}, 500);
-					}
-					document.getElementById('p-c-three-4').style.color = '#00C9FA';
-					document.getElementById('p-c-three-4').style.backgroundColor = '#ffffff';
-				}break;
+		(function($) {
+			var html_p_c_one = '<img id="scroll_img_height" src="img/p_c_content_w_one.png">';
+			var html_p_c_two = '<img src="img/p_c_content_w_two.png">';
+			var html_p_c_three = '<img src="img/p_c_content_w_three.png">';
+			var html_p_c_four = '<img src="img/p_c_content_w_four.png">';
+			var item_one = document.getElementById('p-c-one-1');
+			if (item_one.querySelector('.mui-loading')) {
+				setTimeout(function() {
+					item_one.querySelector('.mui-scroll').innerHTML = html_p_c_one;
+				}, 100);
+				setTimeout(function() {
+					var height = document.getElementById('scroll_img_height').height;
+					document.getElementById('p-c-one-1').style.minHeight = height + 'px';
+					document.getElementById('p-c-one-2').style.minHeight = height + 'px';
+					document.getElementById('p-c-one-3').style.minHeight = height + 'px';
+					document.getElementById('p-c-one-4').style.minHeight = height + 'px';
+				}, 600);
 			}
-		});
-	})(mui);
-</script>
-
+			document.getElementById('p-c-one-slider').addEventListener('slide', function(e) {
+				document.getElementById('p-c-three-1').style.color = '#5A5757';
+				document.getElementById('p-c-three-2').style.color = '#5A5757';
+				document.getElementById('p-c-three-3').style.color = '#5A5757';
+				document.getElementById('p-c-three-4').style.color = '#5A5757';
+				switch (e.detail.slideNumber) {
+					case 0:
+						{
+							var item_one = document.getElementById('p-c-one-1');
+							if (item_one.querySelector('.mui-loading')) {
+								setTimeout(function() {
+									item_one.querySelector('.mui-scroll').innerHTML = html_p_c_one;
+								}, 500);
+							}
+							document.getElementById('p-c-three-1').style.color = '#00C9FA';
+							document.getElementById('p-c-three-1').style.backgroundColor = '#ffffff';
+						}
+						break;
+					case 1:
+						{
+							var item_two = document.getElementById('p-c-one-2');
+							if (item_two.querySelector('.mui-loading')) {
+								setTimeout(function() {
+									item_two.querySelector('.mui-scroll').innerHTML = html_p_c_two;
+								}, 500);
+							}
+							document.getElementById('p-c-three-2').style.color = '#00C9FA';
+							document.getElementById('p-c-three-2').style.backgroundColor = '#ffffff';
+						}
+						break;
+					case 2:
+						{
+							var item_three = document.getElementById('p-c-one-3');
+							if (item_three.querySelector('.mui-loading')) {
+								setTimeout(function() {
+									item_three.querySelector('.mui-scroll').innerHTML = html_p_c_three;
+								}, 500);
+							}
+							document.getElementById('p-c-three-3').style.color = '#00C9FA';
+							document.getElementById('p-c-three-3').style.backgroundColor = '#ffffff';
+						}
+						break;
+					case 3:
+						{
+							var item_four = document.getElementById('p-c-one-4');
+							if (item_four.querySelector('.mui-loading')) {
+								setTimeout(function() {
+									item_four.querySelector('.mui-scroll').innerHTML = html_p_c_four;
+								}, 500);
+							}
+							document.getElementById('p-c-three-4').style.color = '#00C9FA';
+							document.getElementById('p-c-three-4').style.backgroundColor = '#ffffff';
+						}
+						break;
+				}
+			});
+		})(mui);
+	</script>
 
 </html>
