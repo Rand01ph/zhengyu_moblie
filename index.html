@@ -9,7 +9,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="x5-orientation" content="portrait">
 
-		<title>广州市正誉企业管理咨询有限公司-手机版|广州公司注册|广州工商注册|广州代理记账|广州财务审计|广州资产评估|广州商品条形码新办|会计代帐|财务咨询广州市正誉企业管理咨询有限公司</title>
+		<title>正誉企业管理（广东）集团有限公司-手机版|广州公司注册|广州工商注册|广州代理记账|广州财务审计|广州资产评估|广州商品条形码新办|会计代帐|财务咨询 正誉企业管理（广东）集团有限公司</title>
 		<meta name="Keywords" content="广州公司注册|广州工商注册|广州代理记账|广州财务审计|广州资产评估|广州商品条形码新办|会计代帐|财务咨询">
 		<meta name="Description" content="企业 （公司）注册、代理记帐、税务筹划、财务咨询、审计验资、高新认定、管理咨询">
 
@@ -19,16 +19,26 @@
 			mui.init();
 		</script>
 		<style>
+		*{ padding:0; margin:0;}
+		ul,li{ list-style:none; padding:0; margin:0;}
+		/* clear style start */
+.clearfix:before, .clearfix:after { content: "."; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+/* clear style end */
+		.item-list{ background:#FFF; border:1px solid #e5e5e5; border-left:0; border-right:0;}
+		.item-list li{ float:left; width:33%;}
+		.item-list li:last-child{width:34%;}
 			.l_zml_cont__cate {
 				list-style: none;
 				padding-left: 0px;
 				margin-top: 0px;
 			}
 			
-			.l_zml_cont__cate__til {
-				margin-left: 20px;
-				padding-top: 15px;
+			.item-title-bar {
 				clear: both;
+				padding:15px 5px;
 			}
 			
 			.l_zml_cont__cate__til__a {
@@ -44,32 +54,34 @@
 			}
 			
 			.l_zml_cont__cate__main {
-				padding-left: 2%;
-				padding-top: 15px;
 			}
+			.l_zml_cont__cate__main a{
+				display:block;
+				}
 			
-			.l_zml_cont__cate__main div {
-				padding-top: 6%;
-				width: 31%;
-				height: auto;
+			.l_zml_cont__cate__main .item-con {
 				background-color: white;
-				float: left;
 				margin-left: 1%;
 				text-align: center;
-				min-height: 130px;
+				border-right:1px solid #e5e5e5;
+				padding-top:20px;
+				height:140px;
 			}
+			.item-list li:last-child .item-con{
+				border:0;
+				}
 			
 			.l_zml_cont__cate__main__img {
 				max-width: 50px;
-				width: 25%;
+				width: 45%;
 			}
 			
 			.l_zml_cont__cate__main__nam {
 				margin-top: 5%;
-				color: #252525;
-				font-weight: bold;
+				color: #000;
 				margin-bottom: 0px;
 				font-family: 'Microsoft Yahei', Helvetica, Arial;
+				font-size:15px;
 			}
 			
 			.l_zml_cont__cate__main__dis {
@@ -105,177 +117,351 @@
 			.l_zml_tab {
 				border-top: 1px solid #b6b5b6;
 			}
+			.wrap{ width:100%;}
+			.index-header{ background:url(img/index_banner.jpg) no-repeat center center; background-size:cover; height:240px; text-align:center;}
+			.index-header-bg{ background:rgba(0,0,0,.25); height:240px; overflow:hidden;}
+			
+			.index-header-logo{ display:inline-block; margin-top:40px; margin-bottom:10px; background:#FFF; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; height:104px; width:104px;}
+			.index-header-logo img{ width:100%; padding:4px;}
+			
+			
+			/*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+.index-header-logo{
+    animation: righteaseinAnimate 1s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 1s ease 1;
+    -moz-animation: righteaseinAnimate 1s ease 1;
+    -ms-animation: righteaseinAnimate 1s ease 1;
+    -o-animation: righteaseinAnimate 1s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+			/*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-o-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-ms-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-moz-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+.company_name{
+	color:#FFF;
+	font-size:18px;
+	margin-bottom:10px;
+	font-family:"Microsoft YaHei", SimHei, Verdana, Arial, sans-serif;
+    animation: lefteaseinAnimate 1s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 1s ease 1;
+    -ms-animation: lefteaseinAnimate 1s ease 1;
+    -o-animation: lefteaseinAnimate 1s ease 1;
+    -moz-animation: lefteaseinAnimate 1s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+/*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+.company_introduce{
+	color:#FFF;
+	font-size:12px;
+    animation: righteaseinAnimate 1s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 1s ease 1;
+    -moz-animation: righteaseinAnimate 1s ease 1;
+    -ms-animation: righteaseinAnimate 1s ease 1;
+    -o-animation: righteaseinAnimate 1s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+.index-footer{ background:#666; color:#FFF; font-size:12px; text-align:center; padding:15px 0; margin-top:30px;}
 		</style>
 
 	</head>
 
 	<body>
-
+        <div class="wrap">
+               <div class="index-header">
+                      <div class="index-header-bg">
+                               <div class="index-header-logo"><img src="img/zy-logo-h.png" /></div>
+                        <h2 class="company_name">正誉企业管理（广东）集团有限公司</h2>
+                               <h5 class="company_introduce">公司注册，财税记账，知识产权，创业法律问题</h5>           
+                      </div>
+               </div>
+        </div>
 		<ul class="l_zml_cont__cate">
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
+			<div class="item-title-bar">
 				<span class="l_zml_cont__cate__til__b">注册一家公司</span>
-			</li>
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="company_registry.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_zhuce.png" alt="公司注册">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-01.png" alt="公司注册">
 						<p class="l_zml_cont__cate__main__nam">公司注册</p>
 						<p class="l_zml_cont__cate__main__dis">快速为你注册公司</p>
 					</div>
 				</a>
+            </li>
+            <li class="l_zml_cont__cate__main">
 				<a href="business_amendment.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_change.png" alt="工商变更">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-02.png" alt="工商变更">
 						<p class="l_zml_cont__cate__main__nam">工商变更</p>
 						<p class="l_zml_cont__cate__main__dis">增资、股权变更</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="administrative_approval.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_check.png" alt="行政审批">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-03.png" alt="行政审批">
 						<p class="l_zml_cont__cate__main__nam">行政审批</p>
 						<p class="l_zml_cont__cate__main__dis">行政许可资质审批</p>
 					</div>
 				</a>
 			</li>
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
+            </ul>
+            </div>
+			<div class="item-title-bar">
 				<span class="l_zml_cont__cate__til__b">财税记账，找个会计来帮忙</span>
-			</li>
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="agency_bookkeeping.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_billing.png" alt="代理记账">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-04.png" alt="代理记账">
 						<p class="l_zml_cont__cate__main__nam">代理记账</p>
 						<p class="l_zml_cont__cate__main__dis">专业会计记账报税</p>
 					</div>
 				</a>
+            </li>
+            <li class="l_zml_cont__cate__main">   
 				<a href="tax_agency.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_shuiwu.png" alt="税务代办">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-05.png" alt="税务代办">
 						<p class="l_zml_cont__cate__main__nam">税务代办</p>
 						<p class="l_zml_cont__cate__main__dis">会计代办税务事项</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">       
 				<a href="financial_audit.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_shenpi.png" alt="审批">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-06.png" alt="审批">
 						<p class="l_zml_cont__cate__main__nam">审批</p>
 						<p class="l_zml_cont__cate__main__dis">会计代办财务审计</p>
 					</div>
 				</a>
 			</li>
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
+            </ul>
+            </div>
+			<div class="item-title-bar">
 				<span class="l_zml_cont__cate__til__b">知识产权，保护企业重要的无形资产</span>
-			</li>
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="trademark_registration.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_sb.png" alt="商标">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-07.png" alt="商标">
 						<p class="l_zml_cont__cate__main__nam">商标</p>
 						<p class="l_zml_cont__cate__main__dis">保护品牌标识形象</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="copyright.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_zzq.png" alt="著作权">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-08.png" alt="著作权">
 						<p class="l_zml_cont__cate__main__nam">著作权</p>
 						<p class="l_zml_cont__cate__main__dis">保护作品，防范侵权</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="patent.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_zl.png" alt="专利">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-09.png" alt="专利">
 						<p class="l_zml_cont__cate__main__nam">专利</p>
 						<p class="l_zml_cont__cate__main__dis">发明、外观、实用新型</p>
 					</div>
 				</a>
 			</li>
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
+            </ul>
+            </div>
+			<div class="item-title-bar">
 				<span class="l_zml_cont__cate__til__b">人事社保，为员工上五险一金</span>
-			</li>
-
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="enterprise_social_security.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_shebao.png" alt="社保公积金">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-10.png" alt="社保公积金">
 						<p class="l_zml_cont__cate__main__nam">企业社保</p>
 						<p class="l_zml_cont__cate__main__dis">给员工上五险一金</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="social_security.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_fl.png" alt="员工福利">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-11.png" alt="员工福利">
 						<p class="l_zml_cont__cate__main__nam">个人社保</p>
 						<p class="l_zml_cont__cate__main__dis">个人社保代缴</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="personnel_system.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_rs.png" alt="人事制度">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-12.png" alt="人事制度">
 						<p class="l_zml_cont__cate__main__nam">人事制度</p>
 						<p class="l_zml_cont__cate__main__dis">劳动人事规范制度</p>
 					</div>
 				</a>
 			</li>
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
+            </ul>
+            </div>
+			<div class="item-title-bar">
 				<span class="l_zml_cont__cate__til__b">创业法律问题，找律师来帮忙</span>
-			</li>
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="tallawyer.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_wen.png" alt="社保公积金">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-13.png" alt="社保公积金">
 						<p class="l_zml_cont__cate__main__nam">问律师</p>
 						<p class="l_zml_cont__cate__main__dis">法律问题，来问律师</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="contract_of_trial.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com/Public/Image/Weixin/home/new_home_ht.png" alt="写合同">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-14.png" alt="写合同">
 						<p class="l_zml_cont__cate__main__nam">写合同</p>
 						<p class="l_zml_cont__cate__main__dis">律师代写审核合同</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="legal_consul_tant.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="http://www.kuaifawu.com//Public/Image/Weixin/home/new_home_gw.png" alt="法律顾问">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-15.png" alt="法律顾问">
 						<p class="l_zml_cont__cate__main__nam">法律顾问</p>
 						<p class="l_zml_cont__cate__main__dis">请个专业律师当顾问</p>
 					</div>
 				</a>
 			</li>
-			<li class="l_zml_cont__cate__til">
-				<span class="l_zml_cont__cate__til__a">&nbsp;</span>
-				<span class="l_zml_cont__cate__til__b">广州市正誉企业管理咨询有限公司</span>
-			</li>
+            </ul>
+            </div>
+			<div class="item-title-bar">
+				<span class="l_zml_cont__cate__til__b">正誉企业管理（广东）集团有限公司</span>
+			</div>
+            <div class="item-list clearfix">
+            <ul>
 			<li class="l_zml_cont__cate__main">
 				<a href="about_us.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="img/people.png" alt="公司介绍">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-16.png" alt="公司介绍">
 						<p class="l_zml_cont__cate__main__nam">公司介绍</p>
 						<p class="l_zml_cont__cate__main__dis">身边的财税专家</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="contact_us.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="img/telephone.png" alt="联系我们">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-17.png" alt="联系我们">
 						<p class="l_zml_cont__cate__main__nam">联系我们</p>
 						<p class="l_zml_cont__cate__main__dis">竭诚为您服务</p>
 					</div>
 				</a>
+             </li>
+             <li class="l_zml_cont__cate__main">   
 				<a href="company_code.html">
-					<div>
-						<img class="l_zml_cont__cate__main__img" src="img/technology.png" alt="公司二维码">
+					<div class="item-con">
+						<img class="l_zml_cont__cate__main__img" src="img/icon/icon-18.png" alt="公司二维码">
 						<p class="l_zml_cont__cate__main__nam">公司二维码</p>
 						<p class="l_zml_cont__cate__main__dis">便捷的客服服务</p>
 					</div>
 				</a>
 			</li>
 		</ul>
+        </div>
+        <div class="index-footer">
+        &copy; 正誉企业管理（广东）集团有限公司 版权所有 
+        </div>
 		<script>
 			mui(".mui-slider").slider({
 				interval: 4000
